@@ -1,2 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+.home-hero {
+  font-size: 55px;
+}
+
+@media (min-width: 500px) {
+  .home-hero {
+    font-size: 105px;
+  }
+};

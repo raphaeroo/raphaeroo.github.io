@@ -4,6 +4,7 @@ import { Plus, ArrowDownRight } from 'react-feather'
 import { ItemContainer, MobileHeader, DesktopHeader } from './styles'
 
 import { Text } from '~/components'
+import { Colors } from '~/constants'
 
 export const HeaderSection = () => {
   return (
@@ -13,7 +14,7 @@ export const HeaderSection = () => {
           <Row>
             <Col>
               <ItemContainer size="w50">
-                <Text textKey="Raphael Freitas" />
+                <Text textKey="Raphael Freitas" fontSize="small" />
               </ItemContainer>
             </Col>
             <Col>
@@ -21,16 +22,16 @@ export const HeaderSection = () => {
                 <Col className="justify-content-end">
                   <ItemContainer size="w100">
                     <div className="d-flex justify-content-between">
-                      <Text textKey="Work" />
-                      <ArrowDownRight color="#a4ffaf" />
+                      <Text textKey="Work" fontSize="small" />
+                      <ArrowDownRight color={Colors.Secondary} />
                     </div>
                   </ItemContainer>
                 </Col>
                 <Col className="justify-content-end">
                   <ItemContainer size="w100">
                     <div className="d-flex justify-content-between">
-                      <Text textKey="Information" />
-                      <ArrowDownRight color="#a4ffaf" />
+                      <Text textKey="Information" fontSize="small" />
+                      <ArrowDownRight color={Colors.Secondary} />
                     </div>
                   </ItemContainer>
                 </Col>
@@ -42,14 +43,14 @@ export const HeaderSection = () => {
           <Row>
             <Col>
               <ItemContainer size="w100">
-                <Text textKey="Raphael Freitas" />
+                <Text textKey="Raphael Freitas" fontSize="small" />
               </ItemContainer>
             </Col>
             <Col>
               <ItemContainer size="w100">
                 <div className="d-flex justify-content-between">
-                  <Text textKey="Menu" />
-                  <Plus color="#a4ffaf" />
+                  <Text textKey="Menu" fontSize="small" />
+                  <Plus color={Colors.Secondary} />
                 </div>
               </ItemContainer>
             </Col>

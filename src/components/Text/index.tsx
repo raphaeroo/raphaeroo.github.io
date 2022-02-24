@@ -7,25 +7,22 @@ interface Props {
   textKey: Scope
   variant?: 'P' | 'Hero'
   params?: string
-  fontSize?: number
-  weight?: 'regular' | 'bold' | 'light' | 'semi-bold'
-  lines?: number
-  color?: string
+  fontSize?: 'small' | 'medium' | 'large'
 }
 
-export const Text = ({ textKey, variant = 'P', params }: Props) => {
+export const Text = ({ textKey, variant = 'P', params, fontSize = 'medium' }: Props) => {
   const TextComponent = Variants[variant]
 
   if (params) {
     return (
-      <TextComponent>
+      <TextComponent size={fontSize}>
         {translate(textKey, { placeholder: params, defaultValue: textKey })}
       </TextComponent>
     )
   }
 
   return (
-    <TextComponent>
+    <TextComponent size={fontSize}>
       {translate(textKey, { defaultValue: textKey })}
     </TextComponent>
   )
