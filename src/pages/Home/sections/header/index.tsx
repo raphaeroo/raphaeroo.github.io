@@ -1,5 +1,6 @@
 import { Container, Col, Row } from 'react-bootstrap'
 import { Plus, ArrowDownRight } from 'react-feather'
+import { Link } from 'react-router-dom'
 
 import { ItemContainer, MobileHeader, DesktopHeader } from './styles'
 
@@ -21,18 +22,22 @@ export const HeaderSection = () => {
               <Row className="d-md-flex d-none">
                 <Col className="justify-content-end">
                   <ItemContainer size="w100">
-                    <div className="d-flex justify-content-between">
-                      <Text textKey="Work" fontSize="small" />
-                      <ArrowDownRight color={Colors.Secondary} />
-                    </div>
+                    <Link to="#">
+                      <div className="d-flex justify-content-between">
+                        <Text textKey="home.header.work" fontSize="small" />
+                        <ArrowDownRight color={Colors.Secondary} />
+                      </div>
+                    </Link>
                   </ItemContainer>
                 </Col>
                 <Col className="justify-content-end">
                   <ItemContainer size="w100">
-                    <div className="d-flex justify-content-between">
-                      <Text textKey="Information" fontSize="small" />
-                      <ArrowDownRight color={Colors.Secondary} />
-                    </div>
+                    <Link to="#">
+                      <div className="d-flex justify-content-between">
+                        <Text textKey="home.header.information" fontSize="small" />
+                        <ArrowDownRight color={Colors.Secondary} />
+                      </div>
+                    </Link>
                   </ItemContainer>
                 </Col>
               </Row>
@@ -49,7 +54,7 @@ export const HeaderSection = () => {
             <Col>
               <ItemContainer size="w100">
                 <div className="d-flex justify-content-between">
-                  <Text textKey="Menu" fontSize="small" />
+                  <Text textKey="home.header.menu" fontSize="small" />
                   <Plus color={Colors.Secondary} />
                 </div>
               </ItemContainer>
