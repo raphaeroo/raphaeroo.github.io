@@ -14,9 +14,11 @@ export const HeaderSection = () => {
         <DesktopHeader className="d-none d-md-block">
           <Row>
             <Col>
-              <ItemContainer size="w50">
-                <Text textKey="Raphael Freitas" fontSize="small" />
-              </ItemContainer>
+              <Link to="/">
+                <ItemContainer size="w50">
+                  <Text textKey="Raphael Freitas" fontSize="small" />
+                </ItemContainer>
+              </Link>
             </Col>
             <Col>
               <Row className="d-md-flex d-none">
@@ -32,7 +34,7 @@ export const HeaderSection = () => {
                 </Col>
                 <Col className="justify-content-end">
                   <ItemContainer size="w100">
-                    <Link to="#">
+                    <Link to="/info">
                       <div className="d-flex justify-content-between">
                         <Text textKey="home.header.information" fontSize="small" />
                         <ArrowDownRight color={Colors.Secondary} />
@@ -47,9 +49,11 @@ export const HeaderSection = () => {
         <MobileHeader className="d-block d-md-none">
           <Row>
             <Col>
-              <ItemContainer size="w100">
-                <Text textKey="Raphael Freitas" fontSize="small" />
-              </ItemContainer>
+              <Link to="/">
+                <ItemContainer size="w100">
+                  <Text textKey="Raphael Freitas" fontSize="small" />
+                </ItemContainer>
+              </Link>
             </Col>
             <Col>
               <ItemContainer size="w100">
