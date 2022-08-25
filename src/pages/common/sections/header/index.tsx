@@ -26,8 +26,8 @@ export const HeaderSection = () => {
                   <ItemContainer size="w100">
                     <Link to="#">
                       <div className="d-flex justify-content-between">
-                        <Text textKey="home.header.work" fontSize="small" />
-                        <ArrowDownRight color={Colors.Secondary} />
+                        {/* <Text textKey="home.header.work" fontSize="small" />
+                        <ArrowDownRight color={Colors.Secondary} /> */}
                       </div>
                     </Link>
                   </ItemContainer>
@@ -36,8 +36,8 @@ export const HeaderSection = () => {
                   <ItemContainer size="w100">
                     <Link to="/info">
                       <div className="d-flex justify-content-between">
-                        <Text textKey="home.header.information" fontSize="small" />
-                        <ArrowDownRight color={Colors.Secondary} />
+                        {/* <Text textKey="home.header.information" fontSize="small" />
+                        <ArrowDownRight color={Colors.Secondary} /> */}
                       </div>
                     </Link>
                   </ItemContainer>
